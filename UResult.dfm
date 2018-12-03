@@ -1,0 +1,130 @@
+object FormResult: TFormResult
+  Left = 339
+  Top = 173
+  BorderStyle = bsDialog
+  Caption = #1048#1075#1088#1072' '#1086#1082#1086#1085#1095#1077#1085#1072
+  ClientHeight = 369
+  ClientWidth = 321
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object ImageWin: TImage
+    Left = 0
+    Top = 0
+    Width = 321
+    Height = 100
+    Center = True
+    Proportional = True
+  end
+  object Bevel1: TBevel
+    Left = 0
+    Top = 100
+    Width = 321
+    Height = 25
+    Shape = bsTopLine
+  end
+  object LabelTime: TLabel
+    Left = 8
+    Top = 104
+    Width = 37
+    Height = 13
+    Caption = #1042#1088#1077#1084#1103':'
+  end
+  object LabelCTime: TLabel
+    Left = 51
+    Top = 104
+    Width = 21
+    Height = 13
+  end
+  object LabelDif: TLabel
+    Left = 8
+    Top = 168
+    Width = 62
+    Height = 13
+    Caption = #1057#1083#1086#1078#1085#1086#1089#1090#1100':'
+  end
+  object Label1: TLabel
+    Left = 24
+    Top = 216
+    Width = 38
+    Height = 13
+    Caption = #1053#1080#1079#1082#1072#1103
+  end
+  object Label2: TLabel
+    Left = 264
+    Top = 216
+    Width = 45
+    Height = 13
+    Caption = #1042#1099#1089#1086#1082#1072#1103
+  end
+  object Label3: TLabel
+    Left = 136
+    Top = 216
+    Width = 45
+    Height = 13
+    Caption = #1057#1088#1077#1076#1085#1103#1103
+  end
+  object LabelDifV: TLabel
+    Left = 72
+    Top = 168
+    Width = 12
+    Height = 13
+    Caption = '10'
+  end
+  object ButtonNew: TButton
+    Left = 216
+    Top = 128
+    Width = 97
+    Height = 25
+    Caption = #1053#1086#1074#1072#1103' '#1080#1075#1088#1072
+    ModalResult = 1
+    TabOrder = 0
+  end
+  object ButtonQuit: TButton
+    Left = 8
+    Top = 128
+    Width = 97
+    Height = 25
+    Caption = #1042#1099#1081#1090#1080' '#1080#1079' '#1080#1075#1088#1099
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object ButtonStatistics: TButton
+    Left = 112
+    Top = 128
+    Width = 97
+    Height = 25
+    Caption = #1057#1090#1072#1090#1080#1089#1090#1080#1082#1072
+    TabOrder = 2
+    OnClick = ButtonStatisticsClick
+  end
+  object ListBoxStatistics: TListBox
+    Left = 8
+    Top = 232
+    Width = 305
+    Height = 129
+    ItemHeight = 13
+    TabOrder = 3
+  end
+  object TrackBarDif: TTrackBar
+    Left = 24
+    Top = 184
+    Width = 281
+    Height = 33
+    Max = 9
+    Frequency = 10
+    Position = 9
+    TabOrder = 4
+    TickStyle = tsManual
+    OnChange = TrackBarDifChange
+  end
+end
